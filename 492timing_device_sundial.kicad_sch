@@ -40024,18 +40024,14 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "Connector:IEC_60320_C14_Receptacle"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at -5.842 8.636 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40044,8 +40040,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03"
-				(at 0 -5.08 0)
+			(property "Value" "IEC_60320_C14_Receptacle"
+				(at 0 -9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40055,7 +40051,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -2.286 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -40066,6 +40062,28 @@
 				)
 			)
 			(property "Datasheet" ""
+				(at -2.286 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "C14 Plug, 10A max"
+				(at -0.635 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Plug C14 IEC320"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -40076,7 +40094,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "ki_fp_filters" "C*14*Receptacle*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -40087,32 +40105,10 @@
 					)
 				)
 			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "IEC_60320_C14_Receptacle_1_1"
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -40121,43 +40117,56 @@
 						(type background)
 					)
 				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+				(polyline
+					(pts
+						(xy -4.826 -6.35) (xy -5.334 -5.842) (xy -5.334 5.842) (xy -4.826 6.35) (xy 0.254 6.35) (xy 2.794 3.81)
+						(xy 2.794 -3.81) (xy 0.254 -6.35) (xy -4.826 -6.35)
+					)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+					(start -3.937 -3.302)
+					(end -1.397 -4.318)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -3.81 4.318)
+					(end -1.27 3.302)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 2.032 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin power_in line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "L"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -40172,10 +40181,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
+				(pin power_in line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -40190,10 +40199,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
+				(pin bidirectional line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "PE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -40493,6 +40502,158 @@
 						)
 					)
 					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -41671,7 +41832,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Meanwell-LRS-100-24:LRS-100-24"
+		(symbol "LRS-100-24_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -41730,7 +41891,7 @@
 					)
 				)
 			)
-			(symbol "LRS-100-24_0_1"
+			(symbol "LRS-100-24_1_0_1"
 				(rectangle
 					(start -11.43 10.16)
 					(end 11.43 -10.16)
@@ -41743,7 +41904,7 @@
 					)
 				)
 			)
-			(symbol "LRS-100-24_1_1"
+			(symbol "LRS-100-24_1_1_1"
 				(text "LRS-100-24"
 					(at 0 -11.938 0)
 					(effects
@@ -41771,7 +41932,7 @@
 					)
 				)
 				(pin power_in line
-					(at -13.97 0 0)
+					(at -13.97 -5.08 0)
 					(length 2.54)
 					(name "AC/N"
 						(effects
@@ -41789,7 +41950,7 @@
 					)
 				)
 				(pin power_in line
-					(at -13.97 -5.08 0)
+					(at -13.97 0 0)
 					(length 2.54)
 					(name "FG"
 						(effects
@@ -42389,6 +42550,156 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -43281,17 +43592,6 @@
 		)
 		(uuid "8c6c36f9-e9b0-4bd5-a37f-25dab087e346")
 	)
-	(text "GROUND"
-		(exclude_from_sim no)
-		(at 18.288 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 72 72 1)
-			)
-		)
-		(uuid "0eba20b5-09e2-4166-a208-8fc728be79d5")
-	)
 	(text "Team 212 Senior Design Sundial Timing Device\n"
 		(exclude_from_sim no)
 		(at 212.09 189.738 0)
@@ -43313,17 +43613,6 @@
 		)
 		(uuid "6acafac7-fd61-4eb9-adc5-09ce17d48f5d")
 	)
-	(text "NEUTRAL"
-		(exclude_from_sim no)
-		(at 18.034 29.21 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 72 72 1)
-			)
-		)
-		(uuid "af939f4c-5c8e-40a0-abe1-9a78dc5296ba")
-	)
 	(text "Motor Encoder"
 		(exclude_from_sim no)
 		(at 257.048 120.65 0)
@@ -43334,17 +43623,6 @@
 			)
 		)
 		(uuid "bf67a15c-78e2-443f-b014-1d5cb4f6a69f")
-	)
-	(text "LINE"
-		(exclude_from_sim no)
-		(at 20.066 26.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 72 72 1)
-			)
-		)
-		(uuid "e1478f4e-7405-4e8c-ad63-9ae3efccb736")
 	)
 	(junction
 		(at 176.53 128.27)
@@ -43393,7 +43671,7 @@
 		(uuid "2e974a3f-c28e-42a9-87d2-c1c4c2ab5cbe")
 	)
 	(no_connect
-		(at 64.77 26.67)
+		(at 96.52 26.67)
 		(uuid "37393037-9d81-4409-8f2d-f71303c77a11")
 	)
 	(no_connect
@@ -43405,7 +43683,7 @@
 		(uuid "3eea5f6c-e8c3-41d4-9525-7243ce70a9d4")
 	)
 	(no_connect
-		(at 64.77 36.83)
+		(at 96.52 36.83)
 		(uuid "4d290d2e-ead5-484e-a84a-db0d0ac0e56f")
 	)
 	(no_connect
@@ -43492,7 +43770,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 31.75) (xy 67.31 31.75)
+			(xy 96.52 31.75) (xy 99.06 31.75)
 		)
 		(stroke
 			(width 0)
@@ -43531,26 +43809,6 @@
 			(type default)
 		)
 		(uuid "29f5e1bb-97ac-47c2-b0d7-1660778ad128")
-	)
-	(wire
-		(pts
-			(xy 29.21 29.21) (xy 36.83 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2abba98e-6adf-42b9-88cc-2d681217b166")
-	)
-	(wire
-		(pts
-			(xy 29.21 24.13) (xy 36.83 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f0086ae-5681-4124-a89b-4999a76a4921")
 	)
 	(wire
 		(pts
@@ -43677,13 +43935,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 31.75) (xy 29.21 34.29)
+			(xy 35.56 29.21) (xy 68.58 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80a62d6c-c18d-4435-ab30-d03401e50987")
+		(uuid "8133fbb9-1717-46d8-bd3b-492b7602878e")
 	)
 	(wire
 		(pts
@@ -43738,13 +43996,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 26.67) (xy 29.21 24.13)
+			(xy 35.56 34.29) (xy 68.58 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "980aa959-23f8-4b74-a469-c69ff3b03ad3")
+		(uuid "9192a9bc-7890-4add-8d0a-f3d05693f326")
 	)
 	(wire
 		(pts
@@ -43790,6 +44048,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 24.13) (xy 53.34 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a61bb1-3cc2-4f51-b13e-d22f8c5a7517")
+	)
+	(wire
+		(pts
 			(xy 190.5 48.26) (xy 203.2 48.26)
 		)
 		(stroke
@@ -43829,6 +44097,16 @@
 			(color 0 0 255 1)
 		)
 		(uuid "ae9467f8-7d12-4afb-85ac-a28f6dcf2099")
+	)
+	(wire
+		(pts
+			(xy 35.56 24.13) (xy 41.91 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9efa8fa-eee5-4c31-a42f-169e0700d342")
 	)
 	(wire
 		(pts
@@ -43874,7 +44152,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 21.59) (xy 67.31 21.59)
+			(xy 96.52 21.59) (xy 99.06 21.59)
 		)
 		(stroke
 			(width 0)
@@ -43945,13 +44223,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 34.29) (xy 36.83 34.29)
+			(xy 63.5 24.13) (xy 68.58 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f63572e4-4354-46d5-bd47-99fe809b45ab")
+		(uuid "f7482ff2-534b-4cae-9029-eb87a8b5140e")
 	)
 	(wire
 		(pts
@@ -44457,7 +44735,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 106.68 21.59 0)
+		(at 138.43 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44468,7 +44746,7 @@
 		(fields_autoplaced yes)
 		(uuid "530c0f72-0179-4305-ad64-ce938cdd6281")
 		(property "Reference" "#PWR04"
-			(at 106.68 25.4 0)
+			(at 138.43 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44479,7 +44757,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 106.68 16.51 0)
+			(at 138.43 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44489,7 +44767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 21.59 0)
+			(at 138.43 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44500,7 +44778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 21.59 0)
+			(at 138.43 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44511,7 +44789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 106.68 21.59 0)
+			(at 138.43 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44534,8 +44812,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 67.31 31.75 0)
+		(lib_name "LRS-100-24_1")
+		(lib_id "Meanwell-LRS-100-24:LRS-100-24")
+		(at 82.55 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44543,10 +44822,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "61a34003-d556-407a-b504-9fc8306f1e11")
-		(property "Reference" "#PWR08"
-			(at 67.31 38.1 0)
-			(hide yes)
+		(fields_autoplaced yes)
+		(uuid "5cbe7585-ebaa-48c4-83d7-36f5165753bd")
+		(property "Reference" "PS1"
+			(at 82.55 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44555,8 +44834,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 67.31 35.306 0)
+		(property "Value" ""
+			(at 82.55 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44566,7 +44845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 31.75 0)
+			(at 82.55 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44577,7 +44856,102 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 31.75 0)
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "970786f3-d9f7-482b-bbc3-648971f37044")
+		)
+		(pin "5"
+			(uuid "32b33ed3-0c6e-400f-a595-cdbf43d8ad7b")
+		)
+		(pin "7"
+			(uuid "ac993437-8fa7-4c35-9e9d-b34afdb30b6c")
+		)
+		(pin "2"
+			(uuid "78a2cc8a-f65e-460d-8a00-6da9ba29def0")
+		)
+		(pin "1"
+			(uuid "db526d0b-3478-46f8-8b18-1f1bf16e2a08")
+		)
+		(pin "4"
+			(uuid "99b367cd-6073-42b7-a30b-b8549c76671a")
+		)
+		(pin "6"
+			(uuid "f31fdffb-1395-4e79-a9e5-911e92da6136")
+		)
+		(instances
+			(project "492timing_device_sundial"
+				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
+					(reference "PS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61a34003-d556-407a-b504-9fc8306f1e11")
+		(property "Reference" "#PWR08"
+			(at 99.06 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 35.306 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44588,7 +44962,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 67.31 31.75 0)
+			(at 99.06 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44764,101 +45138,6 @@
 			(project "492timing_device_sundial"
 				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Meanwell-LRS-100-24:LRS-100-24")
-		(at 50.8 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78d31096-a0c2-4bde-a2a7-ec6bac343df4")
-		(property "Reference" "PS3"
-			(at 50.8 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 50.8 29.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "de63abde-cc57-4b37-9d2e-6043e5819ecc")
-		)
-		(pin "1"
-			(uuid "d5c6fae8-6796-4813-940d-8cc954e06f6e")
-		)
-		(pin "3"
-			(uuid "b4a23cb9-9c66-40f8-910a-6b4b26f076c4")
-		)
-		(pin "2"
-			(uuid "36a4a3c8-92c0-45b2-8106-71ea04ba83b5")
-		)
-		(pin "4"
-			(uuid "c748cad3-651d-4a25-8dc1-159c9870546e")
-		)
-		(pin "5"
-			(uuid "7375d372-7d76-432c-b19b-a9f6c4a9ecdd")
-		)
-		(pin "7"
-			(uuid "41915356-1eee-45f2-891b-74f7e3a93f5e")
-		)
-		(instances
-			(project "492timing_device_sundial"
-				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
-					(reference "PS3")
 					(unit 1)
 				)
 			)
@@ -45619,8 +45898,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:IEC_60320_C14_Receptacle")
+		(at 26.67 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97ecb9d5-541b-4a6b-845e-eba80d09ccff")
+		(property "Reference" "J1"
+			(at 26.67 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IEC_60320_C14_Receptacle"
+			(at 26.67 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.384 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.384 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "C14 Plug, 10A max"
+			(at 26.035 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ede3af7b-cf48-4d74-82be-9a921948badd")
+		)
+		(pin "2"
+			(uuid "ca317e97-e364-4779-b139-55699cb82717")
+		)
+		(pin "3"
+			(uuid "d888a6f6-5a96-4aca-899b-b86d95889fc0")
+		)
+		(instances
+			(project "492timing_device_sundial"
+				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Traco TSR 1-2450:TSR_1-2450")
-		(at 91.44 24.13 0)
+		(at 123.19 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -45630,7 +45992,7 @@
 		(dnp no)
 		(uuid "9a3f5abd-67b5-4953-8678-fb3a8c0dd54e")
 		(property "Reference" "PS2"
-			(at 91.44 16.764 0)
+			(at 123.19 16.764 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45640,7 +46002,7 @@
 			)
 		)
 		(property "Value" "TSR_1-2450"
-			(at 91.44 31.242 0)
+			(at 123.19 31.242 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45650,7 +46012,7 @@
 			)
 		)
 		(property "Footprint" "TSR_1-2450:CONV_TSR_1-2450"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45662,7 +46024,7 @@
 			)
 		)
 		(property "Datasheet" "https://tracopower.com/tsr1-datasheet/"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45674,7 +46036,7 @@
 			)
 		)
 		(property "Description" "1 Amp POL switching regulator, wide input range, pos.-pos. circuit, LM78 compatible, SIP-3"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45686,7 +46048,7 @@
 			)
 		)
 		(property "DATASHEET_URL" "https://tracopower.com/tsr1-datasheet/"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45698,7 +46060,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Traco Power"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45710,7 +46072,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "10.6mm"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45722,7 +46084,7 @@
 			)
 		)
 		(property "MPN" "TSR 1-2450"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45734,7 +46096,7 @@
 			)
 		)
 		(property "PARTREV" "Apr 27, 2020"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45746,7 +46108,7 @@
 			)
 		)
 		(property "Package" "SIP-3 Traco Power"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45758,7 +46120,7 @@
 			)
 		)
 		(property "SOURCE_URL" "https://www.snapeda.com/parts/TSR%201-2450/Traco+Power/view-part/"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45770,7 +46132,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 91.44 24.13 0)
+			(at 123.19 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45801,7 +46163,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 26.67 0)
+		(at 138.43 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -45812,7 +46174,7 @@
 		(fields_autoplaced yes)
 		(uuid "afa39e20-c1ab-4a62-92f3-5e0f01ba030f")
 		(property "Reference" "#PWR01"
-			(at 106.68 33.02 0)
+			(at 138.43 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45823,7 +46185,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 31.75 0)
+			(at 138.43 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45833,7 +46195,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 26.67 0)
+			(at 138.43 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45844,7 +46206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 26.67 0)
+			(at 138.43 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45855,7 +46217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 26.67 0)
+			(at 138.43 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46049,8 +46411,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 24.13 29.21 180)
+		(lib_id "Device:Fuse")
+		(at 45.72 24.13 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -46059,9 +46421,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d3300602-98da-4b0c-84ae-969ef7361b75")
-		(property "Reference" "J1"
-			(at 24.13 20.32 0)
+		(uuid "ca345757-3899-439f-a452-8ce20038930e")
+		(property "Reference" "F1"
+			(at 45.72 17.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46070,8 +46432,8 @@
 				)
 			)
 		)
-		(property "Value" "120 AC Wall Power"
-			(at 24.13 22.86 0)
+		(property "Value" "Fuse"
+			(at 45.72 20.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46081,7 +46443,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 29.21 0)
+			(at 45.72 22.352 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46092,7 +46454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 29.21 0)
+			(at 45.72 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46102,8 +46464,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 24.13 29.21 0)
+		(property "Description" "Fuse"
+			(at 45.72 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46112,20 +46474,97 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "969132d6-1c61-459e-9b16-69860035f771")
-		)
-		(pin "3"
-			(uuid "af325575-7966-4da1-942b-b4ed768bf516")
 		)
 		(pin "1"
-			(uuid "df3a3cc9-4b6a-4010-b3cb-828e27712641")
+			(uuid "2245658d-b6b6-4bc4-bb7a-e4a68a972fb4")
+		)
+		(pin "2"
+			(uuid "9a77a9c6-3eb2-49c5-a565-9b839e177752")
 		)
 		(instances
 			(project "492timing_device_sundial"
 				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
-					(reference "J1")
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 58.42 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd65b729-8bf8-43da-87e2-4cb331de6fce")
+		(property "Reference" "Master_Switch"
+			(at 58.42 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 58.42 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 58.42 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e33e3be-2342-4200-8c52-bc87c9eab66e")
+		)
+		(pin "2"
+			(uuid "93336f1b-733a-459d-a877-56526d04b420")
+		)
+		(instances
+			(project "492timing_device_sundial"
+				(path "/b2b28c88-a5df-4954-a1e2-6f0dd1374771"
+					(reference "Master_Switch")
 					(unit 1)
 				)
 			)
@@ -46133,7 +46572,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 67.31 21.59 0)
+		(at 99.06 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -46144,7 +46583,7 @@
 		(fields_autoplaced yes)
 		(uuid "e689a2bf-048e-4640-a674-131037fdb0e0")
 		(property "Reference" "#PWR07"
-			(at 67.31 25.4 0)
+			(at 99.06 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46155,7 +46594,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 67.31 16.51 0)
+			(at 99.06 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46165,7 +46604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 21.59 0)
+			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46176,7 +46615,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 21.59 0)
+			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46187,7 +46626,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 67.31 21.59 0)
+			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46289,7 +46728,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 76.2 21.59 0)
+		(at 107.95 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -46300,7 +46739,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea85968c-e0ae-4b89-bbc7-dd3272a77404")
 		(property "Reference" "#PWR09"
-			(at 76.2 25.4 0)
+			(at 107.95 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46311,7 +46750,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 76.2 16.51 0)
+			(at 107.95 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46321,7 +46760,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 21.59 0)
+			(at 107.95 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46332,7 +46771,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 21.59 0)
+			(at 107.95 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46343,7 +46782,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 76.2 21.59 0)
+			(at 107.95 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
